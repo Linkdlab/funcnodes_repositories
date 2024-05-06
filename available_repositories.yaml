@@ -1,0 +1,65 @@
+funcnodes-pandas:
+  description: A collection of nodes implementing pandas functionalities.
+  pip: funcnodes-pandas
+  repository: https://github.com/JulianKimmig/funcnodes_pandas.git
+  versions:
+  - 0.1.3
+  - 0.1.2
+  - 0.1.1
+  - 0.1.0
+funcnodes_images:
+  description: A collection of nodes implementing image processing functionalities
+    and the implementation of the image data container.
+  pip: funcnodes-images
+  repository: https://github.com/JulianKimmig/funcnodes_images.git
+  versions:
+  - 0.1.15
+  - 0.1.14
+  - 0.1.13
+  - 0.1.12
+  - 0.1.11
+  - 0.1.1
+  - 0.1.0
+funcnodes_numpy:
+  description: A collection of nodes implementing numpy functionalities.
+  pip: funcnodes-numpy
+  repository: https://github.com/JulianKimmig/funcnodes_numpy.git
+  versions:
+  - 0.1.52
+  - 0.1.51
+  - 0.1.5
+  - 0.1.4
+  - 0.1.3
+  - 0.1.2
+  - 0.1.0
+funcnodes_opencv:
+  description: A collection of nodes implementing opencv functionalities.
+  pip: funcnodes-opencv
+  repository: https://github.com/JulianKimmig/funcnodes_opencv.git
+  versions:
+  - 0.1.4
+  - 0.1.3
+  - 0.1.2
+  - 0.1.1
+  - 0.1.0
+funcnodes_plotly:
+  description: A collection of nodes implementing plotly functionalities especially
+    for frontend rendering.
+  pip: funcnodes-plotly
+  repository: https://github.com/JulianKimmig/funcnodes_plotly.git
+  versions:
+  - 0.1.2
+  - 0.1.1
+  - 0.1.0
+funcnodes_webcam:
+  description: Integrating webcam sources into funcnodes.
+  pip: funcnodes-webcam
+  repository: https://github.com/JulianKimmig/funcnodes_webcam.git
+  versions:
+  - 0.1.0
+funcnodes_yolo:
+  description: A draft implementation of the YOLO model into funcnodes.
+  pip: funcnodes-yolo
+  repository: https://github.com/JulianKimmig/funcnodes_yolo.git
+  versions:
+  - 0.1.0

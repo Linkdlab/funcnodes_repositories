@@ -1,0 +1,10 @@
+/.pytest_cache
+/requirements.txt
+
+
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+dist/
