@@ -1,41 +1,77 @@
 ## Overview collection of funcnode repositories
 
-This is a list of repositories that are available for funcnodes.
+This is a automatic generated list of repositories that are available for funcnodes.
 
 ### Current repositories:
 
-#### [funcnodes-pandas (0.1.3)](https://github.com/JulianKimmig/funcnodes_pandas.git)
 
-A collection of nodes implementing pandas functionalities.
+#### [funcnodes-basic (0.1.8)](https://github.com/Linkdlab/funcnodes_basic)
 
-
-#### [funcnodes_images (0.1.15)](https://github.com/JulianKimmig/funcnodes_images.git)
-
-A collection of nodes implementing image processing functionalities and the implementation of the image data container.
+Basic functionalities for funcnodes
 
 
-#### [funcnodes_numpy (0.1.52)](https://github.com/JulianKimmig/funcnodes_numpy.git)
+#### [funcnodes-files (0.2.1)](https://github.com/Linkdlab/funcnodes_files)
 
-A collection of nodes implementing numpy functionalities.
-
-
-#### [funcnodes_opencv (0.1.4)](https://github.com/JulianKimmig/funcnodes_opencv.git)
-
-A collection of nodes implementing opencv functionalities.
+A package for managing file downloads, uploads, and folder handling within FuncNodes workflows.
 
 
-#### [funcnodes_plotly (0.1.2)](https://github.com/JulianKimmig/funcnodes_plotly.git)
+#### [funcnodes-images (0.2.1)](https://github.com/Linkdlab/funcnodes_images)
 
-A collection of nodes implementing plotly functionalities especially for frontend rendering.
-
-
-#### [funcnodes_webcam (0.1.0)](https://github.com/JulianKimmig/funcnodes_webcam.git)
-
-Integrating webcam sources into funcnodes.
+Basic functionalities to work with images in Funcnodes
 
 
-#### [funcnodes_yolo (0.1.0)](https://github.com/JulianKimmig/funcnodes_yolo.git)
+#### [funcnodes-keras (0.1.11)]()
 
-A draft implementation of the YOLO model into funcnodes.
+Keras for funcnodes\n\n
+
+
+#### [funcnodes-numpy (0.2.4)](https://github.com/Linkdlab/funcnodes_numpy)
+
+implementations of numpy for funcnodes
+
+
+#### [funcnodes-opencv (0.2.0)]()
+
+OpenCV functionalities for funcnodes\n\n
+
+
+#### [funcnodes-pandas (0.2.7)](https://github.com/Linkdlab/funcnodes_pandas)
+
+pandas nodes for funcnodes
+
+
+#### [funcnodes-plotly (0.2.1)](https://github.com/JulianKimmig/funcnodes_plotly)
+
+Plotly for funcnodes\n\n
+
+
+#### [funcnodes-rdkit (0.1.0)]()
+
+rdkit for funcnodes
+
+
+#### [funcnodes-sklearn (0.1.13)](https://linkdlab.de/)
+
+
+
+
+#### [funcnodes-span (0.2.3)](https://linkdlab.de/)
+
+Spectral Peak ANalysis (SPAN) for funcnodes\n\n
+
+
+#### [funcnodes-umap (0.1.2)]()
+
+
+
+
+#### [funcnodes-webcam (0.1.0)]()
+
+
+
+
+#### [funcnodes-yolo (0.1.0)]()
+
+
 
 
