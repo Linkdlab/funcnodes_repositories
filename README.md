@@ -25,7 +25,7 @@ Basic functionalities to work with images in Funcnodes
 Keras for funcnodes\n\n
 
 
-#### [funcnodes-numpy (0.2.4)](https://github.com/Linkdlab/funcnodes_numpy)
+#### [funcnodes-numpy (0.2.5)](https://github.com/Linkdlab/funcnodes_numpy)
 
 implementations of numpy for funcnodes
 
