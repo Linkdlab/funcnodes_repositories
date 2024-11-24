@@ -182,7 +182,6 @@ def main():
                     _df.loc[package_info["package_name"], "summary"][:400] + "..."
                 )
 
-        print(_df.columns, flush=True)
         for col in _df.columns:
             if col not in df.columns:
                 df[col] = None
@@ -193,7 +192,6 @@ def main():
         else:
             print("Appending", flush=True)
             df = pd.concat([df, _df])
-        print(df)
     df = df.replace({float("nan"): None})
     print("AAAs")
 

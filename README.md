@@ -5,7 +5,7 @@ This is a automatic generated list of repositories that are available for funcno
 ### Current repositories:
 
 
-#### [funcnodes-basic (0.1.10)](https://github.com/Linkdlab/funcnodes_basic)
+#### [funcnodes-basic (0.1.11)](https://github.com/Linkdlab/funcnodes_basic)
 
 Basic functionalities for funcnodes
 
@@ -35,7 +35,7 @@ implementations of numpy for funcnodes
 OpenCV functionalities for funcnodes\n\n
 
 
-#### [funcnodes-pandas (0.2.8)](https://github.com/Linkdlab/funcnodes_pandas)
+#### [funcnodes-pandas (0.2.11)](https://github.com/Linkdlab/funcnodes_pandas)
 
 pandas nodes for funcnodes
 
@@ -55,9 +55,9 @@ rdkit for funcnodes
 
 
 
-#### [funcnodes-span (0.3.1)](https://github.com/Linkdlab/funcnodes_span)
+#### [funcnodes-span (0.3.2)](https://github.com/Linkdlab/funcnodes_span)
 
-Spectral Peak ANalysis (SPAN) for funcnodes
+SPectral ANalysis (SPAN) for funcnodes
 
 
 #### [funcnodes-umap (0.1.2)]()
@@ -70,9 +70,9 @@ Spectral Peak ANalysis (SPAN) for funcnodes
 # FuncNodes Webcam\n\n## Overview\n\n`funcnodes-webcam` is an extension of the [FuncNodes](https://github.com/linkdlab/funcnodes) framework that provides nodes to acess webcam streams\n\n## Installation\n\nInstall the package using:\n\n```bash\npip install funcnodes-webcam\n```\n\n## Getting Started\n\nTo begin using `funcnodes-webcam`, you will need to have the core `FuncNodes` framework installe...
 
 
-#### [funcnodes-yolo (0.1.0)]()
+#### [funcnodes-yolo (0.1.2)]()
 
-
+# FuncNodes YOLO\n\n## Overview\n\n`funcnodes-yolo` is an extension of the [FuncNodes](https://github.com/linkdlab/funcnodes) framework that provides nodes to use the [Yolo models from ultralytics](https://github.com/ultralytics/ultralytics) package\n\n## Installation\n\nInstall the package using:\n\n```bash\npip install funcnodes-yolo\n```\n\n## Getting Started\n\nTo begin using `funcnodes-yolo`,...
 
 
 #### [funcnodes-microscopy (0.0.2)](https://github.com/linkdlab/funcnodes_microscopy)
@@ -85,8 +85,13 @@ Spectral Peak ANalysis (SPAN) for funcnodes
 \n# FuncNodes Lmfit\n\n## Overview\n\n`funcnodes-lmfit` is an extension of the [FuncNodes](https://github.com/linkdlab/funcnodes) framework that provides nodes to use the [lmfit](https://lmfit.github.io/lmfit-py/) package\n\n## Installation\n\nInstall the package using:\n\n```bash\npip install funcnodes-lmfit\n```\n\n## Getting Started\n\nTo begin using `funcnodes-lmfit`, you will need to have the...
 
 
-#### [funcnodes-hplc (0.1.0)](https://github.com/Linkdlab/funcnodes_hplc)
+#### [funcnodes-hplc (0.1.1)](https://github.com/Linkdlab/funcnodes_hplc)
 
 Funcnodes Hplc\n\n
+
+
+#### [funcnodes-weather (0.1.0)]()
+
+get weather data in funcnodes\n
 
 
