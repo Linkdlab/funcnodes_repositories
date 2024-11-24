@@ -65,7 +65,7 @@ SPectral ANalysis (SPAN) for funcnodes
 
 
 
-#### [funcnodes-webcam (0.1.1)](https://github.com/Linkdlab/funcnodes_webcam)
+#### [funcnodes-webcam (0.1.2)](https://github.com/Linkdlab/funcnodes_webcam)
 
 # FuncNodes Webcam\n\n## Overview\n\n`funcnodes-webcam` is an extension of the [FuncNodes](https://github.com/linkdlab/funcnodes) framework that provides nodes to acess webcam streams\n\n## Installation\n\nInstall the package using:\n\n```bash\npip install funcnodes-webcam\n```\n\n## Getting Started\n\nTo begin using `funcnodes-webcam`, you will need to have the core `FuncNodes` framework installe...
 
@@ -90,8 +90,13 @@ SPectral ANalysis (SPAN) for funcnodes
 Funcnodes Hplc\n\n
 
 
-#### [funcnodes-weather (0.1.0)]()
+#### [funcnodes-weather (0.1.2)]()
 
 get weather data in funcnodes\n
+
+
+#### [funcnodes-chemprop (0.1.0)]()
+
+chemprop in funcnodes\n
 
 
