@@ -9,6 +9,7 @@ from io import StringIO
 import json
 import pandas as pd
 import time
+import tqdm
 
 
 def download_package(pypi_info, download_dir="packages"):
@@ -125,30 +126,52 @@ def get_package_info(package_name):
 def search_pypi():
     page = 1
     packages = []
-    while True:
-        print(f"Searching page {page}...")
-        url = f"https://pypi.org/search?q=funcnodes&page={page}"
+    url = "https://pypi.org/simple/"
+    text = b""
+    with requests.get(
+        url,
+        stream=True,
+        headers={"Accept": "application/vnd.pypi.simple.v1+json"},
+        timeout=600,
+    ) as response:
+        response.raise_for_status()
+        with tqdm.tqdm(
+            unit="B", unit_scale=True, unit_divisor=1024, desc="getting PyPi Index"
+        ) as pbar:
+            for chunk in response.iter_content(chunk_size=8192):
+                text += chunk
+                pbar.update(len(chunk))
 
-        response = requests.get(url)
-        soup = bs4.BeautifulSoup(response.text, "html.parser")
-        # get main tag
-        main = soup.find("main")
-        if main is None:
-            break
+    jsondata = json.loads(text)["projects"]
+    funcnodes_packages = [
+        p["name"] for p in jsondata if "funcnodes" in p["name"].lower()
+    ]
+    return funcnodes_packages
+    # while True:
+    #     print(f"Searching page {page}...")
+    #     url = f"https://pypi.org/search?q=funcnodes&page={page}"
 
-        # get form tag with action="/search/"
-        form = main.find("form", action="/search/")
+    #     response = requests.get(url)
+    #     print(response.text)
+    #     soup = bs4.BeautifulSoup(response.text, "html.parser")
+    #     # get main tag
+    #     main = soup.find("main")
+    #     if main is None:
+    #         break
 
-        if form is None:
-            break
+    #     # get form tag with action="/search/"
+    #     form = main.find("form", action="/search/")
 
-        # get all links with href="/project/*/"
-        for a in form.find_all("a", href=True):
-            if a["href"].startswith("/project/"):
-                packages.append(a["href"][9:-1])
-        page += 1
+    #     if form is None:
+    #         break
 
-    return packages
+    #     # get all links with href="/project/*/"
+    #     for a in form.find_all("a", href=True):
+    #         if a["href"].startswith("/project/"):
+    #             packages.append(a["href"][9:-1])
+    #     page += 1
+
+    # return packages
 
 
 def main():
@@ -162,39 +185,62 @@ def main():
     else:
         df = pd.DataFrame()
     packages = search_pypi()
+    with open(os.path.join(os.path.dirname(__file__), "whitelist.txt"), "r") as f:
+        whitelist = f.read().split("\n")
+
+    for pw in whitelist:
+        if pw not in packages:
+            packages.append(pw)
+
     with open(os.path.join(os.path.dirname(__file__), "blacklist.txt"), "r") as f:
         blacklist = f.read().split("\n")
     packages = [p for p in packages if p not in blacklist]
 
-    for package in packages:
-        package_info = get_package_info(package)
-        print(package_info["package_name"])
-        _df = pd.DataFrame([package_info], index=[package_info["package_name"]])
-        _df["last_updated"] = pd.Timestamp.now()
+    added = []
+    updated = []
 
-        if not _df.loc[package_info["package_name"], "summary"]:
-            _df.loc[package_info["package_name"], "summary"] = _df.loc[
-                package_info["package_name"], "description"
-            ]
+    package_infos = [
+        get_package_info(package)
+        for package in tqdm.tqdm(
+            packages, desc="Get Infos packages", total=len(packages)
+        )
+    ]
 
-            if len(_df.loc[package_info["package_name"], "summary"]) > 400:
-                _df.loc[package_info["package_name"], "summary"] = (
-                    _df.loc[package_info["package_name"], "summary"][:400] + "..."
-                )
+    series = []
+    now = pd.Timestamp.now()
+    for package_info in tqdm.tqdm(
+        package_infos, desc="Making series packages", total=len(package_infos)
+    ):
+        name = package_info["package_name"]
+        if name is None:
+            raise ValueError("Package name is None")
+        if "summary" not in package_info or not package_info["summary"]:
+            if "description" in package_info:
+                package_info["summary"] = package_info["description"]
+            else:
+                package_info["summary"] = ""
+        if len(package_info["summary"]) > 400:
+            package_info["summary"] = package_info["summary"][:400] + "..."
+        package_info["last_updated"] = now
+        ser = pd.Series(package_info, name=name)
+        series.append(ser)
 
-        for col in _df.columns:
+    for ser in tqdm.tqdm(series, desc="Processing series", total=len(series)):
+        for col in ser.index:
             if col not in df.columns:
                 df[col] = None
-
-        if package_info["package_name"] in df.index:
-            print("Updating", flush=True)
-            df.loc[package_info["package_name"]] = _df.loc[package_info["package_name"]]
+        if ser.name in df.index:
+            for col in ser.index:
+                if df.loc[ser.name, col] != ser[col]:
+                    df.loc[ser.name, col] = ser[col]
+            updated.append(ser.name)
         else:
-            print("Appending", flush=True)
-            df = pd.concat([df, _df])
-    df = df.replace({float("nan"): None})
-    print("AAAs")
+            df = pd.concat([df, ser.to_frame().T])  # Add new entry
+            added.append(ser.name)
 
+    df = df.replace({float("nan"): None})
+    print("updated:", updated, "\ntotal:", len(updated))
+    print("added:", added, "\ntotal:", len(added))
     df.to_csv("funcnodes_modules.csv", index=False)
 
     with open("README_template.md", "r") as f:
@@ -209,4 +255,7 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as e:
+        print(e)

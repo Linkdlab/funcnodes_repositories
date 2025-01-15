@@ -5,27 +5,27 @@ This is a automatic generated list of repositories that are available for funcno
 ### Current repositories:
 
 
-#### [funcnodes-basic (0.1.11)](https://github.com/Linkdlab/funcnodes_basic)
+#### [funcnodes-basic (0.2.1)](https://github.com/Linkdlab/funcnodes_basic)
 
 Basic functionalities for funcnodes
 
 
-#### [funcnodes-files (0.2.2)](https://github.com/Linkdlab/funcnodes_files)
+#### [funcnodes-files (0.2.7)](https://github.com/Linkdlab/funcnodes_files)
 
 A package for managing file downloads, uploads, and folder handling within FuncNodes workflows.
 
 
-#### [funcnodes-images (0.2.1)](https://github.com/Linkdlab/funcnodes_images)
+#### [funcnodes-images (0.2.2)](https://github.com/Linkdlab/funcnodes_images)
 
 Basic functionalities to work with images in Funcnodes
 
 
-#### [funcnodes-keras (0.1.11)]()
+#### [funcnodes-keras (0.1.14)]()
 
 Keras for funcnodes\n\n
 
 
-#### [funcnodes-numpy (0.2.7)](https://github.com/Linkdlab/funcnodes_numpy)
+#### [funcnodes-numpy (0.2.9)](https://github.com/Linkdlab/funcnodes_numpy)
 
 implementations of numpy for funcnodes
 
@@ -45,7 +45,7 @@ pandas nodes for funcnodes
 Plotly for funcnodes\n\n
 
 
-#### [funcnodes-rdkit (0.1.0)]()
+#### [funcnodes-rdkit (0.1.3)]()
 
 rdkit for funcnodes
 
@@ -95,8 +95,13 @@ Funcnodes Hplc\n\n
 get weather data in funcnodes\n
 
 
-#### [funcnodes-chemprop (0.1.0)]()
+#### [funcnodes-chemprop (0.1.2)]()
 
 chemprop in funcnodes\n
+
+
+#### [funcnodes-sec (0.1.1)](https://github.com/Linkdlab/funcnodes_sec)
+
+Funcnodes Sec\n\n
 
 
