@@ -55,7 +55,7 @@ rdkit for funcnodes
 
 
 
-#### [funcnodes-span (0.3.2)](https://github.com/Linkdlab/funcnodes_span)
+#### [funcnodes-span (0.3.4)](https://github.com/Linkdlab/funcnodes_span)
 
 SPectral ANalysis (SPAN) for funcnodes
 
@@ -100,8 +100,13 @@ get weather data in funcnodes\n
 chemprop in funcnodes\n
 
 
-#### [funcnodes-sec (0.1.1)](https://github.com/Linkdlab/funcnodes_sec)
+#### [funcnodes-sec (0.1.4)](https://github.com/Linkdlab/funcnodes_sec)
 
 Funcnodes Sec\n\n
+
+
+#### [funcnodes-storage (0.1.0)]()
+
+Interact with local storage like sqlite
 
 

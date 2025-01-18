@@ -10,6 +10,7 @@ import json
 import pandas as pd
 import time
 import tqdm
+from packaging.version import parse as parse_version
 
 
 def download_package(pypi_info, download_dir="packages"):
@@ -112,11 +113,15 @@ def get_package_info(package_name):
 
     # escape \n\t and all other special characters
     description = description.encode("unicode_escape").decode("utf-8")
+    sorted_releases = sorted(
+        pypi_info["releases"].keys(), key=parse_version, reverse=True
+    )
     datadict = {
         "package_name": package_name,
         "version": version,
         "description": description,
         "summary": pypi_info["info"]["summary"],
+        "releases": ", ".join(sorted_releases),
         **urls,
     }
     datadict.update(entry_points)
@@ -185,10 +190,10 @@ def main():
     else:
         df = pd.DataFrame()
     packages = search_pypi()
-    with open(os.path.join(os.path.dirname(__file__), "whitelist.txt"), "r") as f:
-        whitelist = f.read().split("\n")
+    with open(os.path.join(os.path.dirname(__file__), "official.txt"), "r") as f:
+        official = f.read().split("\n")
 
-    for pw in whitelist:
+    for pw in official:
         if pw not in packages:
             packages.append(pw)
 
@@ -212,6 +217,10 @@ def main():
         package_infos, desc="Making series packages", total=len(package_infos)
     ):
         name = package_info["package_name"]
+        if name in official:
+            package_info["official"] = True
+        else:
+            package_info["official"] = False
         if name is None:
             raise ValueError("Package name is None")
         if "summary" not in package_info or not package_info["summary"]:
