@@ -100,7 +100,7 @@ get weather data in funcnodes\n
 chemprop in funcnodes\n
 
 
-#### [funcnodes-sec (0.1.4)](https://github.com/Linkdlab/funcnodes_sec)
+#### [funcnodes-sec (0.1.5)](https://github.com/Linkdlab/funcnodes_sec)
 
 Funcnodes Sec\n\n
 
