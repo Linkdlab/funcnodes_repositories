@@ -55,7 +55,7 @@ rdkit for funcnodes
 
 
 
-#### [funcnodes-span (0.3.4)](https://github.com/Linkdlab/funcnodes_span)
+#### [funcnodes-span (0.3.6)](https://github.com/Linkdlab/funcnodes_span)
 
 SPectral ANalysis (SPAN) for funcnodes
 
@@ -80,7 +80,7 @@ SPectral ANalysis (SPAN) for funcnodes
 # FuncNodes Microscopy\n\n## Overview\n\n`funcnodes-microscopy` is an extension of the [FuncNodes](https://github.com/linkdlab/funcnodes) framework that provides nodes to acess webcam streams\n\n## Installation\n\nInstall the package using:\n\n```bash\npip install funcnodes-microscopy\n```\n\n## Getting Started\n\nTo begin using `funcnodes-microscopy`, you will need to have the core `FuncNodes` fr...
 
 
-#### [funcnodes-lmfit (0.1.2)](https://github.com/Linkdlab/funcnodes_lmfit)
+#### [funcnodes-lmfit (0.2.0)](https://github.com/Linkdlab/funcnodes_lmfit)
 
 \n# FuncNodes Lmfit\n\n## Overview\n\n`funcnodes-lmfit` is an extension of the [FuncNodes](https://github.com/linkdlab/funcnodes) framework that provides nodes to use the [lmfit](https://lmfit.github.io/lmfit-py/) package\n\n## Installation\n\nInstall the package using:\n\n```bash\npip install funcnodes-lmfit\n```\n\n## Getting Started\n\nTo begin using `funcnodes-lmfit`, you will need to have the...
 
@@ -100,9 +100,9 @@ get weather data in funcnodes\n
 chemprop in funcnodes\n
 
 
-#### [funcnodes-sec (0.1.5)](https://github.com/Linkdlab/funcnodes_sec)
+#### [funcnodes-sec (0.1.7)](https://github.com/Linkdlab/funcnodes_sec)
 
-Funcnodes Sec\n\n
+Funcnodes Sec\n
 
 
 #### [funcnodes-storage (0.1.0)]()
