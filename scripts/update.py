@@ -86,14 +86,16 @@ def get_pipy_info(package_name):
 
 
 def get_package_info(package_name):
-    tmpdir = os.path.join(os.path.dirname(__file__), "tmp", package_name)
+    pypi_info = get_pipy_info(package_name)
+    version = pypi_info["info"]["version"]
+    tmpdir = os.path.join(
+        os.path.dirname(os.path.dirname(__file__)), "tmp", package_name, version
+    )
     if not os.path.exists(tmpdir):
         os.makedirs(tmpdir)
-    pypi_info = get_pipy_info(package_name)
     with open(os.path.join(tmpdir, "pypi.json"), "w+") as f:
         json.dump(pypi_info, f, indent=2)
 
-    version = pypi_info["info"]["version"]
     description = pypi_info["info"]["description"]
 
     package_path = download_package(pypi_info, os.path.join(tmpdir, "dl"))
