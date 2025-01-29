@@ -189,6 +189,7 @@ def main():
             if col not in df.columns:
                 df[col] = None
         df.index = df["package_name"]
+        df = df.replace({float("nan"): None})
     else:
         df = pd.DataFrame()
     packages = search_pypi()
@@ -205,6 +206,7 @@ def main():
 
     added = []
     updated = []
+    unchanged = []
 
     package_infos = [
         get_package_info(package)
@@ -232,7 +234,7 @@ def main():
                 package_info["summary"] = ""
         if len(package_info["summary"]) > 400:
             package_info["summary"] = package_info["summary"][:400] + "..."
-        package_info["last_updated"] = now
+
         ser = pd.Series(package_info, name=name)
         series.append(ser)
 
@@ -241,17 +243,31 @@ def main():
             if col not in df.columns:
                 df[col] = None
         if ser.name in df.index:
+            changed = False
             for col in ser.index:
+                if ser[col] == "":
+                    ser[col] = None
                 if df.loc[ser.name, col] != ser[col]:
+                    changed = True
+                    print(
+                        f"{ser.name}: {col} changed from '{df.loc[ser.name, col]}' to '{ser[col]}'"
+                    )
                     df.loc[ser.name, col] = ser[col]
-            updated.append(ser.name)
+            if changed:
+                df.loc[ser.name, "last_updated"] = now
+                updated.append(ser.name)
+            else:
+                unchanged.append(ser.name)
         else:
+            ser["last_updated"] = now
             df = pd.concat([df, ser.to_frame().T])  # Add new entry
             added.append(ser.name)
 
     df = df.replace({float("nan"): None})
+    print("unchanged:", unchanged, "\ntotal:", len(unchanged))
     print("updated:", updated, "\ntotal:", len(updated))
     print("added:", added, "\ntotal:", len(added))
+
     df.to_csv("funcnodes_modules.csv", index=False)
 
     with open("README_template.md", "r") as f:
@@ -259,7 +275,11 @@ def main():
 
     for row, rowdata in df.iterrows():
         template += f"#### [{rowdata['package_name']} ({rowdata['version']})]({rowdata['source'] or rowdata['homepage'] or ''})\n\n"
-        template += f"{rowdata['summary'] if rowdata['summary'] else ''}\n\n\n"
+        summary = rowdata["summary"] or ""
+        # summary might contain literal "\n" and "\t" characters which should be replaced with actual newlines and tabs
+        if summary:
+            summary = summary.replace("\\n", "\n").replace("\\t", "\t")
+        template += f"{summary}\n\n\n"
 
     with open("README.md", "w") as f:
         f.write(template)
