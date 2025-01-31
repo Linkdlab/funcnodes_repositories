@@ -27,15 +27,14 @@ Keras for funcnodes
 
 
 
-#### [funcnodes-numpy (0.2.9)](https://github.com/Linkdlab/funcnodes_numpy)
+#### [funcnodes-numpy (0.2.10)](https://github.com/Linkdlab/funcnodes_numpy)
 
 implementations of numpy for funcnodes
 
 
-#### [funcnodes-opencv (0.2.3)](https://github.com/Linkdlab/funcnodes_opencv)
+#### [funcnodes-opencv (0.2.4)](https://github.com/Linkdlab/funcnodes_opencv)
 
 OpenCV functionalities for funcnodes
-
 
 
 
@@ -55,9 +54,9 @@ Plotly for funcnodes
 rdkit for funcnodes
 
 
-#### [funcnodes-sklearn (0.1.13)](https://linkdlab.de/)
+#### [funcnodes-sklearn (0.1.15)](https://github.com/Linkdlab/funcnodes_sklearn)
 
-
+Funcnodes interface to scikit-learn
 
 
 #### [funcnodes-span (0.3.6)](https://github.com/Linkdlab/funcnodes_span)
