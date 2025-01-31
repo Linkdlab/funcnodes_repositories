@@ -15,7 +15,7 @@ Basic functionalities for funcnodes
 A package for managing file downloads, uploads, and folder handling within FuncNodes workflows.
 
 
-#### [funcnodes-images (0.2.3)](https://github.com/Linkdlab/funcnodes_images)
+#### [funcnodes-images (0.2.4)](https://github.com/Linkdlab/funcnodes_images)
 
 Basic functionalities to work with images in Funcnodes
 
