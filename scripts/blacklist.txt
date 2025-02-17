@@ -2,6 +2,7 @@ funcnodes
 funcnodes-core
 funcnodes-react-flow
 funcnodes-module
+funcnodes-worker
 itanium-demangler
 meshed
 posted
