@@ -10,7 +10,7 @@ This is a automatic generated list of repositories that are available for funcno
 Basic functionalities for funcnodes
 
 
-#### [funcnodes-files (0.2.11)](https://github.com/Linkdlab/funcnodes_files)
+#### [funcnodes-files (0.2.13)](https://github.com/Linkdlab/funcnodes_files)
 
 A package for managing file downloads, uploads, and folder handling within FuncNodes workflows.
 
@@ -32,7 +32,7 @@ Keras for funcnodes
 implementations of numpy for funcnodes
 
 
-#### [funcnodes-opencv (0.2.5)](https://github.com/Linkdlab/funcnodes_opencv)
+#### [funcnodes-opencv (0.2.12)](https://github.com/Linkdlab/funcnodes_opencv)
 
 OpenCV functionalities for funcnodes
 
@@ -111,25 +111,9 @@ pip install funcnodes-yolo
 To begin using `funcnodes-yolo`,...
 
 
-#### [funcnodes-microscopy (0.0.2)](https://github.com/linkdlab/funcnodes_microscopy)
+#### [funcnodes-microscopy (0.1.0)](https://github.com/linkdlab/funcnodes_microscopy)
 
-# FuncNodes Microscopy
-
-## Overview
-
-`funcnodes-microscopy` is an extension of the [FuncNodes](https://github.com/linkdlab/funcnodes) framework that provides nodes to acess webcam streams
-
-## Installation
-
-Install the package using:
-
-```bash
-pip install funcnodes-microscopy
-```
-
-## Getting Started
-
-To begin using `funcnodes-microscopy`, you will need to have the core `FuncNodes` fr...
+A package to perform advanced microscopy data analysis
 
 
 #### [funcnodes-lmfit (0.2.0)](https://github.com/Linkdlab/funcnodes_lmfit)
