@@ -38,7 +38,7 @@ OpenCV functionalities for funcnodes
 
 
 
-#### [funcnodes-pandas (0.2.11)](https://github.com/Linkdlab/funcnodes_pandas)
+#### [funcnodes-pandas (0.2.12)](https://github.com/Linkdlab/funcnodes_pandas)
 
 pandas nodes for funcnodes
 
