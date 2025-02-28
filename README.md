@@ -43,7 +43,7 @@ OpenCV functionalities for funcnodes
 pandas nodes for funcnodes
 
 
-#### [funcnodes-plotly (0.2.4)](https://github.com/Linkdlab/funcnodes_plotly)
+#### [funcnodes-plotly (0.2.5)](https://github.com/Linkdlab/funcnodes_plotly)
 
 Plotly for funcnodes
 
