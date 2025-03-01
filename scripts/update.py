@@ -11,6 +11,7 @@ import pandas as pd
 import time
 import tqdm
 from packaging.version import parse as parse_version
+import argparse
 
 
 def download_package(pypi_info, download_dir="packages"):
@@ -182,6 +183,13 @@ def search_pypi():
 
 
 def main():
+    argparser = argparse.ArgumentParser()
+    argparser.add_argument(
+        "--no-simple", action="store_true", help="Don't use the simple index"
+    )
+
+    args = argparser.parse_args()
+
     if os.path.exists("funcnodes_modules.csv"):
         df = pd.read_csv("funcnodes_modules.csv")
 
@@ -192,7 +200,11 @@ def main():
         df = df.replace({float("nan"): None})
     else:
         df = pd.DataFrame()
-    packages = search_pypi()
+
+    if args.no_simple:
+        packages = []
+    else:
+        packages = search_pypi()
     with open(os.path.join(os.path.dirname(__file__), "official.txt"), "r") as f:
         official = f.read().split("\n")
 
