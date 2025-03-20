@@ -4,6 +4,7 @@ funcnodes-react-flow
 funcnodes-module
 funcnodes-worker
 funcnodes-pyodide
+pytest-funcnodes
 itanium-demangler
 meshed
 posted
