@@ -10,7 +10,7 @@ This is a automatic generated list of repositories that are available for funcno
 Basic functionalities for funcnodes
 
 
-#### [funcnodes-files (0.2.17)](https://github.com/Linkdlab/funcnodes_files)
+#### [funcnodes-files (0.2.18)](https://github.com/Linkdlab/funcnodes_files)
 
 A package for managing file downloads, uploads, and folder handling within FuncNodes workflows.
 
