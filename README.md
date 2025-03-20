@@ -32,7 +32,7 @@ Keras for funcnodes
 implementations of numpy for funcnodes
 
 
-#### [funcnodes-opencv (0.2.12)](https://github.com/Linkdlab/funcnodes_opencv)
+#### [funcnodes-opencv (0.2.13)](https://github.com/Linkdlab/funcnodes_opencv)
 
 OpenCV functionalities for funcnodes
 
