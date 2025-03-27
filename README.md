@@ -10,7 +10,7 @@ This is a automatic generated list of repositories that are available for funcno
 Basic functionalities for funcnodes
 
 
-#### [funcnodes-files (0.2.18)](https://github.com/Linkdlab/funcnodes_files)
+#### [funcnodes-files (0.2.19)](https://github.com/Linkdlab/funcnodes_files)
 
 A package for managing file downloads, uploads, and folder handling within FuncNodes workflows.
 
@@ -43,7 +43,7 @@ OpenCV functionalities for funcnodes
 pandas nodes for funcnodes
 
 
-#### [funcnodes-plotly (0.2.8)](https://github.com/Linkdlab/funcnodes_plotly)
+#### [funcnodes-plotly (0.3.0)](https://github.com/Linkdlab/funcnodes_plotly)
 
 Plotly for funcnodes
 
