@@ -15,7 +15,7 @@ Basic functionalities for funcnodes
 A package for managing file downloads, uploads, and folder handling within FuncNodes workflows.
 
 
-#### [funcnodes-images (0.2.4)](https://github.com/Linkdlab/funcnodes_images)
+#### [funcnodes-images (0.2.6)](https://github.com/Linkdlab/funcnodes_images)
 
 Basic functionalities to work with images in Funcnodes
 
@@ -32,7 +32,7 @@ Keras for funcnodes
 implementations of numpy for funcnodes
 
 
-#### [funcnodes-opencv (0.2.13)](https://github.com/Linkdlab/funcnodes_opencv)
+#### [funcnodes-opencv (0.2.18)](https://github.com/Linkdlab/funcnodes_opencv)
 
 OpenCV functionalities for funcnodes
 
@@ -69,7 +69,7 @@ SPectral ANalysis (SPAN) for funcnodes
 
 
 
-#### [funcnodes-webcam (0.1.2)](https://github.com/Linkdlab/funcnodes_webcam)
+#### [funcnodes-webcam (0.1.3)](https://github.com/Linkdlab/funcnodes_webcam)
 
 # FuncNodes Webcam
 
