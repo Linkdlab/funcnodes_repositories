@@ -77,6 +77,21 @@ def find_entry_points(extract_dir):
 
         if entry_points:
             break
+    for foldername in os.listdir(extract_dir):
+        folder = os.path.join(extract_dir, foldername)
+        if not os.path.isdir(folder):
+            continue
+        if not "__init__.py" in os.listdir(folder):
+            continue
+
+        with open(os.path.join(folder, "__init__.py"), "r") as f:
+            txt = f.read()
+
+        if "react_plugin" not in entry_points:
+            if "REACT_PLUGIN" in txt:
+                entry_points["react_plugin"] = foldername + ":REACT_PLUGIN"
+
+    print(entry_points)
     return entry_points
 
 
