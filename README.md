@@ -32,7 +32,7 @@ Keras for funcnodes
 implementations of numpy for funcnodes
 
 
-#### [funcnodes-opencv (0.2.18)](https://github.com/Linkdlab/funcnodes_opencv)
+#### [funcnodes-opencv (0.3.1)](https://github.com/Linkdlab/funcnodes_opencv)
 
 OpenCV functionalities for funcnodes
 
@@ -69,7 +69,7 @@ SPectral ANalysis (SPAN) for funcnodes
 
 
 
-#### [funcnodes-webcam (0.1.3)](https://github.com/Linkdlab/funcnodes_webcam)
+#### [funcnodes-webcam (0.1.4)](https://github.com/Linkdlab/funcnodes_webcam)
 
 # FuncNodes Webcam
 
