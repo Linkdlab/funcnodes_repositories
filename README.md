@@ -5,7 +5,7 @@ This is a automatic generated list of repositories that are available for funcno
 ### Current repositories:
 
 
-#### [funcnodes-basic (0.2.1)](https://github.com/Linkdlab/funcnodes_basic)
+#### [funcnodes-basic (0.2.2)](https://github.com/Linkdlab/funcnodes_basic)
 
 Basic functionalities for funcnodes
 
@@ -43,7 +43,7 @@ OpenCV functionalities for funcnodes
 pandas nodes for funcnodes
 
 
-#### [funcnodes-plotly (0.3.0)](https://github.com/Linkdlab/funcnodes_plotly)
+#### [funcnodes-plotly (0.3.1)](https://github.com/Linkdlab/funcnodes_plotly)
 
 Plotly for funcnodes
 
@@ -151,13 +151,14 @@ get weather data in funcnodes
 
 
 
-#### [funcnodes-chemprop (0.1.2)]()
+#### [funcnodes-chemprop (0.1.3)]()
 
-chemprop in funcnodes
+# \U0001f9ea funcnodes-chemprop
+
+funcnodes-chemprop is a funcnodes module that integrates the Chemprop deep learning framework for molecular property prediction into node-based pipelines. It allows you to load molecular data, featurize molecules, train a Chemprop model, and predict properties \u2014 all in an interactive, no-code/low-code environment powered by [FuncNodes](https://github.com/Lin...
 
 
-
-#### [funcnodes-sec (0.1.7)](https://github.com/Linkdlab/funcnodes_sec)
+#### [funcnodes-sec (0.1.8)](https://github.com/Linkdlab/funcnodes_sec)
 
 Funcnodes Sec
 
