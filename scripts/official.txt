@@ -18,4 +18,4 @@ funcnodes-weather
 funcnodes-webcam
 funcnodes-yolo
 funcnodes-sec
-funcnodes-storage
+funcnodes-bt100-3j
