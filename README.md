@@ -10,7 +10,7 @@ This is a automatic generated list of repositories that are available for funcno
 Basic functionalities for funcnodes
 
 
-#### [funcnodes-files (0.5.0)](https://github.com/Linkdlab/funcnodes_files)
+#### [funcnodes-files (1.0.0)](https://github.com/Linkdlab/funcnodes_files)
 
 A package for managing file downloads, uploads, and folder handling within FuncNodes workflows.
 
@@ -27,7 +27,7 @@ Keras for funcnodes
 
 
 
-#### [funcnodes-numpy (0.2.10)](https://github.com/Linkdlab/funcnodes_numpy)
+#### [funcnodes-numpy (0.2.11)](https://github.com/Linkdlab/funcnodes_numpy)
 
 implementations of numpy for funcnodes
 
@@ -59,7 +59,7 @@ rdkit for funcnodes
 Funcnodes interface to scikit-learn
 
 
-#### [funcnodes-span (0.3.6)](https://github.com/Linkdlab/funcnodes_span)
+#### [funcnodes-span (0.3.7)](https://github.com/Linkdlab/funcnodes_span)
 
 SPectral ANalysis (SPAN) for funcnodes
 
