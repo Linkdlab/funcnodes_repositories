@@ -1,20 +1,16 @@
-[tool.poetry]
+[project]
 name = "funcnodes-repositories"
 version = "0.1.0"
 description = ""
-authors = ["Julian Kimmig <julian.kimmig@gmx.net>"]
+authors = [
+    {name = "Julian Kimmig", email = "julian.kimmig@gmx.net"}
+]
 readme = "README.md"
-
-[tool.poetry.dependencies]
-python = "^3.11"
-tqdm = "^4.67.1"
-packaging = "^24.2"
-
-[tool.poetry.group.dev.dependencies]
-requests = "^2.32.3"
-pandas = "^2.2.2"
-beautifulsoup4 = "^4.12.3"
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires-python = ">=3.11"
+dependencies = [
+    "tqdm>=4.67.1",
+    "packaging>=24.2",
+    "requests>=2.32.3",
+    "pandas>=2.2.2",
+    "beautifulsoup4>=4.12.3",
+]
