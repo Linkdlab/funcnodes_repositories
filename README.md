@@ -43,7 +43,7 @@ OpenCV functionalities for funcnodes
 pandas nodes for funcnodes
 
 
-#### [funcnodes-plotly (0.3.2)](https://github.com/Linkdlab/funcnodes_plotly)
+#### [funcnodes-plotly (1.0.0)](https://github.com/Linkdlab/funcnodes_plotly)
 
 Plotly for funcnodes
 
@@ -69,7 +69,7 @@ SPectral ANalysis (SPAN) for funcnodes
 
 
 
-#### [funcnodes-webcam (0.1.4)](https://github.com/Linkdlab/funcnodes_webcam)
+#### [funcnodes-webcam (1.0.0)](https://github.com/Linkdlab/funcnodes_webcam)
 
 # FuncNodes Webcam
 
