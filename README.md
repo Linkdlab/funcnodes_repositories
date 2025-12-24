@@ -5,7 +5,7 @@ This is a automatic generated list of repositories that are available for funcno
 ### Current repositories:
 
 
-#### [funcnodes-basic (0.2.4)](https://github.com/Linkdlab/funcnodes_basic)
+#### [funcnodes-basic (1.1.0)](https://github.com/Linkdlab/funcnodes_basic)
 
 Basic functionalities for funcnodes
 
@@ -27,7 +27,7 @@ Keras for funcnodes
 
 
 
-#### [funcnodes-numpy (0.2.11)](https://github.com/Linkdlab/funcnodes_numpy)
+#### [funcnodes-numpy (0.2.12)](https://github.com/Linkdlab/funcnodes_numpy)
 
 implementations of numpy for funcnodes
 
@@ -38,12 +38,12 @@ OpenCV functionalities for funcnodes
 
 
 
-#### [funcnodes-pandas (0.4.0)](https://github.com/Linkdlab/funcnodes_pandas)
+#### [funcnodes-pandas (1.0.0)](https://github.com/Linkdlab/funcnodes_pandas)
 
 pandas nodes for funcnodes
 
 
-#### [funcnodes-plotly (1.0.0)](https://github.com/Linkdlab/funcnodes_plotly)
+#### [funcnodes-plotly (1.1.0)](https://github.com/Linkdlab/funcnodes_plotly)
 
 Plotly for funcnodes
 
@@ -59,7 +59,7 @@ rdkit for funcnodes
 Funcnodes interface to scikit-learn
 
 
-#### [funcnodes-span (0.3.7)](https://github.com/Linkdlab/funcnodes_span)
+#### [funcnodes-span (1.0.1)](https://github.com/Linkdlab/funcnodes_span)
 
 SPectral ANalysis (SPAN) for funcnodes
 
@@ -164,7 +164,7 @@ Funcnodes Sec
 
 
 
-#### [funcnodes-storage (0.1.0)]()
+#### [funcnodes-storage (0.3.0)]()
 
 Interact with local storage like sqlite
 
@@ -172,5 +172,10 @@ Interact with local storage like sqlite
 #### [funcnodes-bt100-3j (0.1.1)]()
 
 funcnodes controller for the longer bt100-3j pump
+
+
+#### [funcnodes-pydantic (1.2.0)](https://github.com/Linkdlab/funcnodes)
+
+funcnodes-pydantic is a funcnodes module
 
 
